@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RED</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body id="buttonresults">
@@ -42,7 +42,7 @@
 
         <br><br>
         <!-- Button zum abrufen aller Zielgruppen -->
-        <form action="red.php" method="POST">
+        <form action="php/red.php" method="POST">
             <input type="hidden" name="zielgruppe" value="1">
             <button type="submit">Zielgruppen abrufen</button>
         </form>
