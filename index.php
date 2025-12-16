@@ -20,7 +20,7 @@
     <p>RED Veranstaltungssuche</p>
 
     <!-- Formular für die Veranstaltungssuche -->
-    <form action="red.php" method="post">
+    <form action="php/red.php" method="post">
 
         <label for="kategorie">Kategorie:</label>
         <input type="text" id="kategorie" name="kategorie"><br><br>
@@ -49,25 +49,25 @@
 
 
         <!-- Button zum abrufen aller Veranstaltungen-->
-        <form action="red.php" method="POST">
+        <form action="php/red.php" method="POST">
             <input type="hidden" name="veranstaltung" value="1">
             <button type="submit">Veranstaltungen abrufen</button>
         </form>
 
         <!-- Button zum abrufen aller Veranstaltungsorte -->
-        <form action="red.php" method="POST">
+        <form action="php/red.php" method="POST">
             <input type="hidden" name="veranstaltungsort" value="1">
             <button type="submit">Veranstaltungsorte abrufen</button>
         </form>
 
         <!-- Button zum abrufen aller Veranstaltungskategorien (1)-->
-        <form action="red.php" method="POST">
+        <form action="php/red.php" method="POST">
             <input type="hidden" name="veranstaltungskategorie1" value="1">
             <button type="submit">Veranstaltungskategorien (1) abrufen</button>
         </form>
 
         <!-- Button zum abrufen aller Veranstaltungsarten (1) -->
-        <form action="red.php" method="POST">
+        <form action="php/red.php" method="POST">
             <input type="hidden" name="veranstaltungsart1" value="1">
             <button type="submit">Veranstaltungsarten (1) abrufen</button>
         </form>
