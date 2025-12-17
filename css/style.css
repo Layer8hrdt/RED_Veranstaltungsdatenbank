@@ -1,17 +1,30 @@
+/*==========================================STYLE FÜR DIE STARTSEITE===============================================*/
+/*                                               >>>index.php<<<                                                  */
 
-/* Style für den body der Startseite*/
-body {
+/*=====Body Startseite=====*/
+.startbody {
+    background-color: white;
     padding: 0 240px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Geom", sans-serif;
+}
+
+/*=====Überschrift Startseite=====*/
+.headerStart {
+    font-family: "Geom", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 
 
-/* Style für die Navigationsleiste der Startseite*/
+/*===============Navigationsleiste Startseite===============*/
 nav {
-    background-color: #333;
+    background-color: #5A7863;
+    border-radius: 15px;
 }
 
+/*=====Unordered List Style=====*/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -19,22 +32,139 @@ nav ul {
     display: flex;
 }
 
+/*=====List items style=====*/
 nav li {
     margin-right: 20px;
 }
 
+/*=====Anchor style=====*/
 nav a {
-    color: white;
+    color: #EBF4DD;
     text-decoration: none;
     padding: 14px 20px;
     display: block;
+    font-weight: bold;
 }
 
+/*=====Hover style=====*/
 nav a:hover {
     background-color: #575757;
 }
 
-.buttonresult {
-    list-style-type: none;
+
+
+
+/*===============Suchformular Startseite===============*/
+
+.suchformular {
+    max-width: fit-content;
+    background-color: #5A7863;
+    border: 1px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.suchformular label {
+    color: white;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.suchformular input[type="text"] {
+    padding: 9px;
+    border-radius: 15px;
+    border: 1px;
+    background-color: #EBF4DD;
     
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================Style für die Ergebnisse der Suche=======================================================*/
+.searchbody {
+    background-color: #D1B494;
+    font-family: "Geom", sans-serif;
+    padding: 0 240px;
 }
