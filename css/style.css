@@ -3,38 +3,60 @@
 
 /*=====Body Startseite=====*/
 .startbody {
-    background-color: white;
-    padding: 0 240px;
+    background-color: #ffffff;
+    padding: 0 176px;
+    margin: 0;
     font-family: "Geom", sans-serif;
 }
 
 /*=====Überschrift Startseite=====*/
 .headerStart {
-    font-family: "Geom", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-shadow: 1px 1px #fca311;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: inset 0px 0px 50px 30px white;
+    color: #fca311;
+    
 }
+
+.startImage {
+    height: 170px;
+    width: auto;
+    margin-right: -110px;
+    margin-left: -110px;
+    
+}
+
+
 
 
 
 /*===============Navigationsleiste Startseite===============*/
 nav {
-    background-color: #5A7863;
+    background-color: #14213d;
     border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: -40px;
 }
 
 /*=====Unordered List Style=====*/
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     display: flex;
+    justify-content: space-between;
 }
 
 /*=====List items style=====*/
 nav li {
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 /*=====Anchor style=====*/
@@ -44,11 +66,13 @@ nav a {
     padding: 14px 20px;
     display: block;
     font-weight: bold;
+    font-size: 18px;
 }
 
 /*=====Hover style=====*/
 nav a:hover {
-    background-color: #575757;
+    background-color: #fca311;
+    border-radius: 15px
 }
 
 
@@ -57,11 +81,15 @@ nav a:hover {
 /*===============Suchformular Startseite===============*/
 
 .suchformular {
-    max-width: fit-content;
-    background-color: #5A7863;
+    max-width: 500px;
+    background-color: #14213d;
     border: 1px;
     border-radius: 15px;
-    padding: 20px;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
 
 .suchformular label {
@@ -77,10 +105,54 @@ nav a:hover {
     border-radius: 15px;
     border: 1px;
     background-color: #EBF4DD;
-    
-
+    box-sizing: border-box;
+    width: 100%;
 
 }
+
+.suchformular button {
+    border-radius: 15px;
+    border: 1px;
+    padding: 5px;
+    margin-top: 20px;
+    font-family: "Geom", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.suchformular button:hover {
+    background-color: #adadad;
+}
+
+/*===============Buttons Startseite===============*/
+
+.abrufbuttons {
+    display: flex;
+    gap: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.btn {
+    padding: 5px 10px;
+    font-family: "Geom", sans-serif;
+    border-radius: 15px;
+    border: 1px;
+    font-size: 18px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: #575757;
+}
+
 
 
 

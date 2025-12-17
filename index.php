@@ -12,20 +12,58 @@
 </head>
 
 <body class="startbody">
-    <h1 class="headerStart" id="headerStart">RED - Regionale Event Datenbank</h1>
+    <div class="headerStart">
+        <img src="images/nuernburg.png." alt="Nürnburg" class="startImage">
+        <h1>RED - Regionale Event Datenbank</h1>
+    </div>
     <nav>
         <ul>
-            <li><a href="#headerStart">Start</a></li>
-            <li><a href="">Top-Events</a></li>
-            <li><a href="">Wohin am Wochenende?</a></li>
+            <li><a href="#headerStart">⭐ Start</a></li>
+            <li><a href="">🎉 Top-Events</a></li>
+            <li><a href="">❓ Wohin am Wochenende?</a></li>
+            <li><a href="#suche">🔍Veranstaltungen suchen</a></li>
+            <li><a href="#suche">📧 Kontakt</a></li>
         </ul>
     </nav>
-    <p>RED Veranstaltungssuche</p>
+
+    <div class="abrufbuttons">
+        <!-- Button zum abrufen aller Zielgruppen -->
+        <form action="php/buttons.php" method="POST">
+            <input type="hidden" name="zielgruppe" value="1">
+            <button type="submit" class="btn">Zielgruppen</button>
+        </form>
+
+
+        <!-- Button zum abrufen aller Veranstaltungen-->
+        <form action="php/buttons.php" method="POST">
+            <input type="hidden" name="veranstaltung" value="1">
+            <button type="submit" class="btn">Veranstaltungen</button>
+        </form>
+
+        <!-- Button zum abrufen aller Veranstaltungsorte -->
+        <form action="php/buttons.php" method="POST">
+            <input type="hidden" name="veranstaltungsort" value="1">
+            <button type="submit" class="btn">Veranstaltungsorte</button>
+        </form>
+
+        <!-- Button zum abrufen aller Veranstaltungskategorien (1)-->
+        <form action="php/buttons.php" method="POST">
+            <input type="hidden" name="veranstaltungskategorie1" value="1">
+            <button type="submit" class="btn">Veranstaltungskategorien</button>
+        </form>
+
+        <!-- Button zum abrufen aller Veranstaltungsarten (1) -->
+        <form action="php/buttons.php" method="POST">
+            <input type="hidden" name="veranstaltungsart1" value="1">
+            <button type="submit" class="btn">Veranstaltungsarten</button>
+        </form>
+    </div>
+
 
     <!-- Formular für die Veranstaltungssuche -->
-    <form class="suchformular" action="php/search.php" method="post">
+    <form class="suchformular" action="php/search.php" method="post" autocomplete="off">
         <div>
-            <label for="kategorie">Kategorie:</label>
+            <label id="suche" for="kategorie">Kategorie:</label>
             <input type="text" id="kategorie" name="kategorie" placeholder="z.B. Musik">
         </div>
         <div>
@@ -53,35 +91,5 @@
     </form>
 
 
-    <!-- Button zum abrufen aller Zielgruppen -->
-    <form action="php/buttons.php" method="POST">
-        <input type="hidden" name="zielgruppe" value="1">
-        <button type="submit">Zielgruppen abrufen</button>
-    </form><br>
-
-
-    <!-- Button zum abrufen aller Veranstaltungen-->
-    <form action="php/buttons.php" method="POST">
-        <input type="hidden" name="veranstaltung" value="1">
-        <button type="submit">Veranstaltungen abrufen</button>
-    </form><br>
-
-    <!-- Button zum abrufen aller Veranstaltungsorte -->
-    <form action="php/buttons.php" method="POST">
-        <input type="hidden" name="veranstaltungsort" value="1">
-        <button type="submit">Veranstaltungsorte abrufen</button>
-    </form><br>
-
-    <!-- Button zum abrufen aller Veranstaltungskategorien (1)-->
-    <form action="php/buttons.php" method="POST">
-        <input type="hidden" name="veranstaltungskategorie1" value="1">
-        <button type="submit">Veranstaltungskategorien (1) abrufen</button>
-    </form><br>
-
-    <!-- Button zum abrufen aller Veranstaltungsarten (1) -->
-    <form action="php/buttons.php" method="POST">
-        <input type="hidden" name="veranstaltungsart1" value="1">
-        <button type="submit">Veranstaltungsarten (1) abrufen</button>
-    </form><br>
 
 </html>
