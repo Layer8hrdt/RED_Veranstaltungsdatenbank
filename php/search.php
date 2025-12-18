@@ -11,6 +11,9 @@ require_once '../config/db_config.php'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suchergebnisse</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
 </head>
 
 <body class="searchbody">

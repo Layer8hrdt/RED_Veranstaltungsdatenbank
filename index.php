@@ -5,27 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RED Veranstaltungssuche</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_main.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
     </style>
 </head>
 
-<body class="startbody">
+<body class="start_body">
+    <!-- Header mit Navigationsleiste -->
     <div class="headerStart">
         <img src="images/nuernburg.png." alt="Nürnburg" class="startImage">
-        <h1>RED - Regionale Event Datenbank</h1>
+        <h1 id="top">RED - Regionale Event Datenbank</h1>
     </div>
     <nav>
         <ul>
-            <li><a href="#headerStart">⭐ Start</a></li>
+            <li><a href="#top">⭐ Start</a></li>
             <li><a href="">🎉 Top-Events</a></li>
             <li><a href="">❓ Wohin am Wochenende?</a></li>
             <li><a href="#suche">🔍Veranstaltungen suchen</a></li>
-            <li><a href="#suche">📧 Kontakt</a></li>
+            <li><a href="">📧 Kontakt</a></li>
         </ul>
     </nav>
-
+    <!-- Buttons zum abrufen bestimmter Datensätze -->
     <div class="abrufbuttons">
         <!-- Button zum abrufen aller Zielgruppen -->
         <form action="php/buttons.php" method="POST">
@@ -58,12 +59,28 @@
             <button type="submit" class="btn">Veranstaltungsarten</button>
         </form>
     </div>
-
+    <!-- Bilderkacheln-->
+    <div class="bilder">
+        <img src="images/v001.jpg" alt="">
+        <img src="images/v002.jpg" alt="">
+        <img src="images/v003.jpg" alt="">
+        <img src="images/v004.jpg" alt="">
+        <img src="images/v005.jpg" alt="">
+        <img src="images/v006.jpg" alt="">
+        <img src="images/v007.jpg" alt="">
+        <img src="images/v008.jpg" alt="">
+        <img src="images/v009.jpg" alt="">
+        <img src="images/v010.jpg" alt="">
+        <img src="images/v011.jpg" alt="">
+        <img src="images/v012.jpg" alt="">
+        <img src="images/v013.jpg" alt="">
+        <img src="images/v014.jpg" alt="">
+    </div>
 
     <!-- Formular für die Veranstaltungssuche -->
     <form class="suchformular" action="php/search.php" method="post" autocomplete="off">
         <div>
-            <label id="suche" for="kategorie">Kategorie:</label>
+            <label for="kategorie" id="suche">Kategorie:</label>
             <input type="text" id="kategorie" name="kategorie" placeholder="z.B. Musik">
         </div>
         <div>
@@ -89,6 +106,7 @@
         </div>
 
     </form>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 

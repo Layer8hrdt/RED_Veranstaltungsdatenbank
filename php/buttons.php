@@ -12,15 +12,15 @@ require_once '../config/db_config.php'
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ergebnisse</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/button_results.css">
 </head>
 
-<body>
+<body class="buttons_body">
     <h1>Ergebnisse</h1>
     <?php
 
 
-    // Funktion, der beim drücken des jeweiligen Buttons eine Query übergibt
+    // Funktion, der beim Drücken des jeweiligen Buttons eine Query übergibt
     function readData($buttonName, $column, $headline, $conn)
     {
 
